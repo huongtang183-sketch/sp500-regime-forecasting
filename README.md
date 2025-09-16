@@ -6,10 +6,10 @@ It constructs a Market Volatility Index (MVI) from macro-financial indicators, d
 The framework integrates predictive modeling and model explainability to improve transparency and interpretability in financial forecasting.
 
 ## Methods
-- Market Volatility Index construction via :contentReference[oaicite:1]{index=1} (PCA)
-- Regime shift detection using :contentReference[oaicite:2]{index=2} (BOCPD)
-- Regime classification with :contentReference[oaicite:3]{index=3} and :contentReference[oaicite:4]{index=4}
-- Feature attribution and model interpretation with :contentReference[oaicite:5]{index=5}
+- Market Volatility Index construction via Principal Component Analysis (PCA)
+- Regime shift detection using Bayesian Online Change Point Detection (BOCPD)
+- Regime classification with Logistic Regression and XGBoost
+- Feature attribution and model interpretation with SHAP
 - Evaluation of regime-conditioned dynamic risk allocation strategies
 
 ## Results
@@ -18,8 +18,4 @@ The framework integrates predictive modeling and model explainability to improve
 - SHAP analysis reveals dominant macro-financial drivers within each regime  
 - Risk-adjusted returns improve under regime-conditioned allocation
 
-## How to Run
-1. Clone this repository  
-2. Install dependencies:
-   ```bash
-   pip install pandas numpy scikit-learn xgboost shap matplotlib
+## Repository Structure
